@@ -13,20 +13,20 @@ INSERT INTO `addon_inventory` (name, label, shared) VALUES
 ;
 
 INSERT INTO `jobs` (name, label) VALUES
-	('police', 'Politie')
+	('elwhite', 'Politie')
 ;
 
 INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_female) VALUES
-	('police',0,'aspirant','Aspirant',0,'{}','{}'),
-	('police',1,'surveillant','Surveillant',0,'{}','{}'),
-	('police',2,'agent','Agent',0,'{}','{}'),
-	('police',3,'hoofdagent','Hoofdagent',0,'{}','{}'),
-	('police',4,'brigadier','Brigadier',0,'{}','{}'),
-  ('police',5,'inspecteur','Inspecteur',0,'{}','{}'),
-  ('police',6,'hoofdinspecteur','Hoofdinspecteur',0,'{}','{}'),
-  ('police',7,'commissaris','Commissaris',0,'{}','{}'),
-  ('police',8,'hoofdcommissaris','Hoofdcommissaris',0,'{}','{}'),
-	('police',9,'boss','Eerste Hoofdcommissaris',0,'{}','{}')
+	('elwhite',0,'aspirant','Aspirant',0,'{}','{}'),
+	('elwhite',1,'surveillant','Surveillant',0,'{}','{}'),
+	('elwhite',2,'agent','Agent',0,'{}','{}'),
+	('elwhite',3,'hoofdagent','Hoofdagent',0,'{}','{}'),
+	('elwhite',4,'brigadier','Brigadier',0,'{}','{}'),
+  ('elwhite',5,'inspecteur','Inspecteur',0,'{}','{}'),
+  ('elwhite',6,'hoofdinspecteur','Hoofdinspecteur',0,'{}','{}'),
+  ('elwhite',7,'commissaris','Commissaris',0,'{}','{}'),
+  ('elwhite',8,'hoofdcommissaris','Hoofdcommissaris',0,'{}','{}'),
+	('elwhite',9,'boss','Eerste Hoofdcommissaris',0,'{}','{}')
 ;
 
 CREATE TABLE `fine_types` (

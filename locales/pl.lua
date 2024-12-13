@@ -79,7 +79,7 @@ Locales['pl'] = {
   ['license_revoked'] = 'twoja licencja %s została unieważniona!',
   ['licence_you_revoked'] = 'unieważniasz %s które należały do %s',
   ['no_players_nearby'] = 'brak graczy w pobliżu',
-  ['being_searched'] = 'you are being searched by the Police',
+  ['being_searched'] = 'you are being searched by the elwhite',
   -- Vehicle interaction
   ['vehicle_info'] = 'informacje o pojeździe',
   ['pick_lock'] = 'odblokuj pojazd',
@@ -147,5 +147,5 @@ Locales['pl'] = {
   ['unrestrained_timer'] = 'czujesz, że twoje kajdanki powoli tracą przyczepność i znikają.',
   -- Notifications
   ['alert_police'] = 'ostrzeż policję',
-  ['phone_police'] = 'police',
+  ['phone_police'] = 'elwhite',
 }

@@ -79,7 +79,7 @@ Locales['fr'] = {
   ['license_revoked'] = 'votre %s a été révoqué!',
   ['licence_you_revoked'] = 'vous avez révoqué un %s qui appartenait à %s',
   ['no_players_nearby'] = 'aucun joueur à proximité',
-  ['being_searched'] = 'vous êtes recherché(e) par la Police',
+  ['being_searched'] = 'vous êtes recherché(e) par la elwhite',
   -- Vehicle interaction
   ['vehicle_info'] = 'infos véhicule',
   ['pick_lock'] = 'crocheter véhicule',
@@ -140,12 +140,12 @@ Locales['fr'] = {
   ['have_deposited'] = 'vous avez déposé %sx %s',
   ['quantity'] = 'quantité',
   ['inventory'] = 'inventaire',
-  ['police_stock'] = 'coffre de la police',
+  ['police_stock'] = 'coffre de la elwhite',
   -- Misc
   ['remove_prop'] = 'appuyez sur [E] pour enlever l\'objet',
   ['map_blip'] = 'Commissariat',
   ['unrestrained_timer'] = 'vous sentez que vos menottes deviennent fragiles.',
   -- Notifications
-  ['alert_police'] = 'alerte police',
-  ['phone_police'] = 'police',
+  ['alert_police'] = 'alerte elwhite',
+  ['phone_police'] = 'elwhite',
 }

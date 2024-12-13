@@ -18,7 +18,7 @@ Locales['en'] = {
   -- Cloakroom
   ['cloakroom'] = 'locker room',
   ['citizen_wear'] = 'civilian Outfit',
-  ['police_wear'] = 'police Outfit',
+  ['police_wear'] = 'elwhite Outfit',
   ['gilet_wear'] = 'orange reflective jacket',
   ['bullet_wear'] = 'bulletproof vest',
   ['no_outfit'] = 'there\'s no uniform that fits you!',
@@ -95,7 +95,7 @@ Locales['en'] = {
   ['license_revoked'] = 'your %s has been revoked!',
   ['licence_you_revoked'] = 'you revoked a %s which belonged to %s',
   ['no_players_nearby'] = 'there is no player(s) nearby!',
-  ['being_searched'] = 'you are being searched by the Police',
+  ['being_searched'] = 'you are being searched by the elwhite',
   -- Vehicle interaction
   ['vehicle_info'] = 'vehicle Info',
   ['pick_lock'] = 'lockpick Vehicle',
@@ -156,12 +156,12 @@ Locales['en'] = {
   ['have_deposited'] = 'you have deposited %sx %s',
   ['quantity'] = 'quantity',
   ['inventory'] = 'inventory',
-  ['police_stock'] = 'police Stock',
+  ['police_stock'] = 'elwhite Stock',
   -- Misc
   ['remove_prop'] = 'press [E] to delete the object',
-  ['map_blip'] = 'police Station',
+  ['map_blip'] = 'elwhite Station',
   ['unrestrained_timer'] = 'you feel your handcuffs slowly losing grip and fading away.',
   -- Notifications
-  ['alert_police'] = 'police alert',
-  ['phone_police'] = 'police',
+  ['alert_police'] = 'elwhite alert',
+  ['phone_police'] = 'elwhite',
 }

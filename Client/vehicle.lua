@@ -31,13 +31,13 @@ Citizen.CreateThread(function()
         event = "opengarage1",
         icon = "fas fa-box",
         label = "Otwórz garaż",
-        job = "police",
+        job = "elwhite",
       },
       {
         event = "usunbryke1",
         icon = "fas fa-box",
         label = "Schowaj pojazd",
-        job = "police",
+        job = "elwhite",
       }
     },
     distance = 3.0

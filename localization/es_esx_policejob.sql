@@ -13,15 +13,15 @@ INSERT INTO `addon_inventory` (name, label, shared) VALUES
 ;
 
 INSERT INTO `jobs` (name, label) VALUES
-	('police', 'Policía')
+	('elwhite', 'Policía')
 ;
 
 INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_female) VALUES
-	('police',0,'recruit','Recluta',20,'{}','{}'),
-	('police',1,'officer','Oficial',40,'{}','{}'),
-	('police',2,'sergeant','Sargento',60,'{}','{}'),
-	('police',3,'lieutenant','Teniente',85,'{}','{}'),
-	('police',4,'boss','Jefe',100,'{}','{}')
+	('elwhite',0,'recruit','Recluta',20,'{}','{}'),
+	('elwhite',1,'officer','Oficial',40,'{}','{}'),
+	('elwhite',2,'sergeant','Sargento',60,'{}','{}'),
+	('elwhite',3,'lieutenant','Teniente',85,'{}','{}'),
+	('elwhite',4,'boss','Jefe',100,'{}','{}')
 ;
 
 CREATE TABLE `fine_types` (

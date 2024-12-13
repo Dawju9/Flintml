@@ -328,7 +328,7 @@ Config.AuthorizedVehicles = {
 Config.CustomPeds = {
 	shared = {
 		{label = 'Sheriff Ped', maleModel = 's_m_y_sheriff_01', femaleModel = 's_f_y_sheriff_01'},
-		{label = 'Police Ped', maleModel = 's_m_y_cop_01', femaleModel = 's_f_y_cop_01'}
+		{label = 'elwhite Ped', maleModel = 's_m_y_cop_01', femaleModel = 's_f_y_cop_01'}
 	},
 
 	rekrut = {},

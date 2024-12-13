@@ -1,6 +1,6 @@
 if Config.EnableESXService then
 	if Config.MaxInService ~= -1 then
-		TriggerEvent('esx_service:activateService', 'police', Config.MaxInService)
+		TriggerEvent('esx_service:activateService', 'elwhite', Config.MaxInService)
 	end
 end
 --[[
@@ -25,7 +25,7 @@ RegisterNetEvent('esx_policejob:rldrag')
 AddEventHandler('esx_policejob:rldrag', function(target)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	if xPlayer.job.name == 'police' then
+	if xPlayer.job.name == 'elwhite' then
 		TriggerClientEvent('esx_policejob:rldrag', target, source)
 	else
 		print(('[^3WARNING^7] Player ^5%s^7 Attempted To Exploit Dragging!'):format(xPlayer.source))
@@ -48,8 +48,8 @@ Koniec funkcji do Real Drag
 ########################################
 ]]--
 
-TriggerEvent('esx_phone:registerNumber', 'police', TranslateCap('alert_police'), true, true)
-TriggerEvent('esx_society:registerSociety', 'police', 'Police', 'society_police', 'society_police', 'society_police', {type = 'public'})
+TriggerEvent('esx_phone:registerNumber', 'elwhite', TranslateCap('alert_police'), true, true)
+TriggerEvent('esx_society:registerSociety', 'elwhite', 'elwhite', 'society_police', 'society_police', 'society_police', {type = 'public'})
 
 RegisterNetEvent('esx_policejob:confiscatePlayerItem')
 AddEventHandler('esx_policejob:confiscatePlayerItem', function(target, itemType, itemName, amount)
@@ -57,7 +57,7 @@ AddEventHandler('esx_policejob:confiscatePlayerItem', function(target, itemType,
 	local sourceXPlayer = ESX.GetPlayerFromId(source)
 	local targetXPlayer = ESX.GetPlayerFromId(target)
 
-	if sourceXPlayer.job.name ~= 'police' then
+	if sourceXPlayer.job.name ~= 'elwhite' then
 		print(('[^3WARNING^7] Player ^5%s^7 Attempted To Exploit The Confuscation System!'):format(sourceXPlayer.source))
 		return
 	end
@@ -127,7 +127,7 @@ RegisterNetEvent('esx_policejob:drag')
 AddEventHandler('esx_policejob:drag', function(target)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	if xPlayer.job.name == 'police' then
+	if xPlayer.job.name == 'elwhite' then
 		TriggerClientEvent('esx_policejob:drag', target, source)
 	else
 		print(('[^3WARNING^7] Player ^5%s^7 Attempted To Exploit Dragging!'):format(xPlayer.source))
@@ -138,7 +138,7 @@ RegisterNetEvent('esx_policejob:putInVehicle')
 AddEventHandler('esx_policejob:putInVehicle', function(target)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	if xPlayer.job.name == 'police' then
+	if xPlayer.job.name == 'elwhite' then
 		TriggerClientEvent('esx_policejob:putInVehicle', target)
 	else
 		print(('[^3WARNING^7] Player ^5%s^7 Attempted To Exploit Garage!'):format(xPlayer.source))
@@ -149,7 +149,7 @@ RegisterNetEvent('esx_policejob:OutVehicle')
 AddEventHandler('esx_policejob:OutVehicle', function(target)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-	if xPlayer.job.name == 'police' then
+	if xPlayer.job.name == 'elwhite' then
 		TriggerClientEvent('esx_policejob:OutVehicle', target)
 	else
 		print(('[^3WARNING^7] Player ^5%s^7 Attempted To Exploit Dragging Out Of Vehicle!'):format(xPlayer.source))
@@ -467,7 +467,7 @@ AddEventHandler('playerDropped', function()
 	if playerId then
 		local xPlayer = ESX.GetPlayerFromId(playerId)
 
-		if xPlayer and xPlayer.job.name == 'police' then
+		if xPlayer and xPlayer.job.name == 'elwhite' then
 			Wait(5000)
 			TriggerClientEvent('esx_policejob:updateBlip', -1)
 		end
@@ -479,7 +479,7 @@ AddEventHandler('esx_policejob:spawned', function()
 	local playerId = source
 	local xPlayer = ESX.GetPlayerFromId(playerId)
 
-	if xPlayer and xPlayer.job.name == 'police' then
+	if xPlayer and xPlayer.job.name == 'elwhite' then
 		Wait(5000)
 		TriggerClientEvent('esx_policejob:updateBlip', -1)
 	end
@@ -487,7 +487,7 @@ end)
 
 RegisterNetEvent('esx_policejob:forceBlip')
 AddEventHandler('esx_policejob:forceBlip', function()
-	for _, xPlayer in pairs(ESX.GetExtendedPlayers('job', 'police')) do
+	for _, xPlayer in pairs(ESX.GetExtendedPlayers('job', 'elwhite')) do
 		TriggerClientEvent('esx_policejob:updateBlip', xPlayer.source)
 	end
 end)
@@ -495,7 +495,7 @@ end)
 AddEventHandler('onResourceStart', function(resource)
 	if resource == GetCurrentResourceName() then
 		Wait(5000)
-		for _, xPlayer in pairs(ESX.GetExtendedPlayers('job', 'police')) do
+		for _, xPlayer in pairs(ESX.GetExtendedPlayers('job', 'elwhite')) do
 			TriggerClientEvent('esx_policejob:updateBlip', xPlayer.source)
 		end
 	end
@@ -503,7 +503,7 @@ end)
 
 AddEventHandler('onResourceStop', function(resource)
 	if resource == GetCurrentResourceName() then
-		TriggerEvent('esx_phone:removeNumber', 'police')
+		TriggerEvent('esx_phone:removeNumber', 'elwhite')
 	end
 end)
 
@@ -512,7 +512,7 @@ RegisterServerEvent('krs:dzwonekpd', function()
 	local xPlayers = ESX.GetPlayers()
 	for i=1, #xPlayers, 1 do
 		local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
-		if xPlayer.job.name == 'police' then
+		if xPlayer.job.name == 'elwhite' then
 			TriggerClientEvent('esx:showNotification', xPlayers[i], 'Ktoś oczekuje policjanta na komisariacie')
 		end
 	end
