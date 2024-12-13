@@ -1,13 +1,12 @@
-fx_version 'bodacious'
+
+fx_version 'cerulean'
 games {'gta5'}
 lua54 'yes'
 
-
 name 'Gang'
-description 'ESX Identity'
-author 'Erfan Ebrahimi'
+author 'Heri'
+description 'Blipy pod gangi uliczne'
 url 'http://erfanebrahimi.ir'
-
 version '0.0.3.4'
 
 server_scripts {
