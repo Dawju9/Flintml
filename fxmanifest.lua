@@ -35,3 +35,9 @@ dependencies {
 	'esplugin_mysql',
 	'async'
 }
+dependencies {
+	'mysql-async',
+	'async',
+	'esx_billing',
+	'esx_vehicleshop'
+}
