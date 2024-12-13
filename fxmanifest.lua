@@ -29,7 +29,7 @@ client_scripts {
 	'locales/en.lua'
 	'locales/*.lua',
 }
-
+ 
 export 'isOwnGangVehicle'
 
 server_exports {
