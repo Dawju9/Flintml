@@ -1,3 +1,4 @@
+
 Locales['hu'] = {
   -- Cloakroom
   ['cloakroom'] = 'Zárt helyiség',
