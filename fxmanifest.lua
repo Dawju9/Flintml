@@ -30,7 +30,5 @@ client_script 'BaseFunction.lua'
 
 dependencies {
 	'mysql-async',
-	'essentialmode',
-	'esplugin_mysql',
 	'async'
 }
