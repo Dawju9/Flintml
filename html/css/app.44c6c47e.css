@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #c00707;
+    font-family: Roboto, sans-serif;
+    user-select: none;
+}
+
+.Closed {
+    display: none!important
+}
+
+.RankingBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    overflow-y: auto;
+    border-radius: 15px;
+    overflow-x: hidden;
+    background-color: #0000005d;
+    background-image: url('https://cdn.discordapp.com/attachments/354684418738225155/941478743673827348/fastrp.png');
+    background-size: 50%;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-right: 0vh;
+}
+
+.RankingBox::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+.RankingBox::-webkit-scrollbar {
+    width: .5vh;
+    background: rgba(156, 54, 54, .8)
+}
+
+.RankingBox::-webkit-scrollbar-thumb {
+    background: rgba(97, 113, 133, .6980392156862745);
+    border-radius: 20px
+}
+
+.RankingItemBox {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+    border-bottom: 1px solid rgba(97, 113, 133, .6980392156862745)
+}
+
+.RankingItemBox:hover {
+    background-color: #75000052
+}
+
+.RankingItemBox:hover p {
+    color: #fff
+}
+
+.RankingItemBox:first-child, .RankingItemBox:first-child:hover {
+    background-color: #7500008c
+}
+
+.RankingItemBox:first-child p {
+    color: #fff
+}
+
+.RankingItemBox p {
+    font-size: 3vh
+}
+
+.RankingKills, .RankingPosition {
+    width: 10%
+}
+
+.RankingName {
+    width: 25%
+}
